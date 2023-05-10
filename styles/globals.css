@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.gradient-1 {
+  background-image: url("../public/bg-product.png");
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+}
+
+.dropdown-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-items a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-items a:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-items.show {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s ease-in-out;
+}
+.promo-bg {
+  background-image: url("../public/glove-promo.png");
+}
